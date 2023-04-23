@@ -10,9 +10,10 @@
   const allText = "你好，https://baidu.com";
   const image = "https://cdn.lotterybox.com/mobile/assets/share.png";
   const shareTel = () => {
-    const url = `tg://share?caption=${encodeURIComponent(
-      allText
-    )}&photo=${encodeURIComponent(image)}`;
+    // const url = `tg://share?caption=${encodeURIComponent(
+    //   allText
+    // )}&photo=${encodeURIComponent(image)}`;
+    const url = `https://t.me/share/url?url=${image}&text=${allText}`;
     location.href = url;
   };
   const shareWhatsApp = () => {
