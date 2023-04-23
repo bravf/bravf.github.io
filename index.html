@@ -14,12 +14,7 @@
   const allText = "你好，https://bravf.github.io/";
   const image = "https://cdn.lotterybox.com/mobile/assets/share.png";
   const shareTel = () => {
-    // const url = `tg://msg_url?text=${encodeURIComponent(
-    //   allText
-    // )}&url=${encodeURIComponent(image)}`;
-    const url = `tg://send?text=${encodeURIComponent(
-      allText
-    )}&photo=${encodeURIComponent(image)}`;
+    const url = `tg://msg?text=${encodeURIComponent(allText)}`;
     location.href = url;
   };
   const shareWhatsApp = () => {
