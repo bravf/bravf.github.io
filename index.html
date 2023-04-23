@@ -13,11 +13,12 @@
     const url = `tg://msg_url?text=${encodeURIComponent(
       allText
     )}&url=${encodeURIComponent(image)}`;
-    console.log(url);
+    location.href = url;
   };
   const shareWhatsApp = () => {
     const url = `whatsapp://send?text=${encodeURIComponent(
       allText
     )}&image=${encodeURIComponent(image)}`;
+    location.href = url;
   };
 </script>
