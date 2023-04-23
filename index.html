@@ -4,14 +4,20 @@
 />
 
 <button onclick="shareTel()">分享tel</button>
+<button onclick="shareWhatsApp()">分享whatsapp</button>
 
 <script>
+  const allText = "你好，https://baidu.com";
+  const image = "https://cdn.lotterybox.com/mobile/assets/share.png";
   const shareTel = () => {
-    const allText = "你好，https://baidu.com";
-    const image = "https://cdn.lotterybox.com/mobile/assets/share.png";
     const url = `tg://msg_url?text=${encodeURIComponent(
       allText
     )}&url=${encodeURIComponent(image)}`;
     console.log(url);
+  };
+  const shareWhatsApp = () => {
+    const url = `whatsapp://send?text=${encodeURIComponent(
+      allText
+    )}&image=${encodeURIComponent(image)}`;
   };
 </script>
