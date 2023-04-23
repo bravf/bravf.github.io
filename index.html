@@ -1,26 +1,30 @@
-<meta
-  property="og:image"
-  content="https://cdn.lotterybox.com/mobile/assets/share.png"
-/>
-<meta
-  name="viewport"
-  content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover"
-/>
-
-<button onclick="shareTel()">分享tel</button>
-<button onclick="shareWhatsApp()">分享whatsapp</button>
-
-<script>
-  const allText = "你好，https://bravf.github.io/";
-  const image = "https://cdn.lotterybox.com/mobile/assets/share.png";
-  const shareTel = () => {
-    const url = `tg://msg?text=${encodeURIComponent(allText)}`;
-    location.href = url;
-  };
-  const shareWhatsApp = () => {
-    const url = `whatsapp://send?text=${encodeURIComponent(
-      allText
-    )}&image=${encodeURIComponent(image)}`;
-    location.href = url;
-  };
-</script>
+<html>
+  <head>
+    <meta
+      property="og:image"
+      content="https://cdn.lotterybox.com/mobile/assets/share.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+  </head>
+  <body>
+    <button onclick="shareTel()">分享tel</button>
+    <button onclick="shareWhatsApp()">分享whatsapp</button>
+  </body>
+  <script>
+    const allText = "你好，https://bravf.github.io/";
+    const image = "https://cdn.lotterybox.com/mobile/assets/share.png";
+    const shareTel = () => {
+      const url = `tg://msg?text=${encodeURIComponent(allText)}`;
+      location.href = url;
+    };
+    const shareWhatsApp = () => {
+      const url = `whatsapp://send?text=${encodeURIComponent(
+        allText
+      )}&image=${encodeURIComponent(image)}`;
+      location.href = url;
+    };
+  </script>
+</html>
