@@ -1,0 +1,1 @@
+import{u as r}from"./plugin-vueexport-helper-d593a7e6.js";import{r as n}from"./index-466d9322.js";function i(e=1e3){return new Promise(t=>{setTimeout(t,e)})}function o(e=10){return parseInt(Math.random()*e)}function u(e=10){return o(e)===0}const s=n(document.body.clientWidth);r(document.body,()=>{s.value=document.body.clientWidth});export{o as a,s as b,u as r,i as s};
