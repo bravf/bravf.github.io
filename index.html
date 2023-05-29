@@ -122,6 +122,7 @@
     function getToken() {
       dsBridge.call("Native.getToken", (token) => {
         document.querySelector("#token").innerHTML = token;
+        console.log(token);
       });
     }
     function toRecharge() {
