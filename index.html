@@ -104,34 +104,34 @@
   </script>
   <body>
     <div>
-      <button onclick="getToken">getToken:</button>
+      <button onclick="getToken()">getToken:</button>
       <span id="token"></span>
     </div>
     <div>
-      <button onclick="toRecharge">toRecharge</button>
+      <button onclick="toRecharge()">toRecharge</button>
     </div>
     <div>
-      <button onclick="toWithdraw">toWithdraw</button>
+      <button onclick="toWithdraw()">toWithdraw</button>
     </div>
     <div>
-      <button onclick="toLogin">toLogin</button>
+      <button onclick="toLogin()">toLogin</button>
     </div>
   </body>
   <script>
     new window.VConsole();
     function getToken() {
-      dsbridge.call("Native.getToken", (token) => {
+      dsBridge.call("Native.getToken", (token) => {
         document.querySelector("#token").innerHTML = token;
       });
     }
     function toRecharge() {
-      dsbridge.call("Native.toRecharge");
+      dsBridge.call("Native.toRecharge");
     }
     function toWithdraw() {
-      dsbridge.call("Native.toWithdraw");
+      dsBridge.call("Native.toWithdraw");
     }
     function toLogin() {
-      dsbridge.call("Native.toLogin");
+      dsBridge.call("Native.toLogin");
     }
   </script>
 </html>
