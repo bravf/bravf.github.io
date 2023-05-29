@@ -25,15 +25,15 @@
   <script>
     new window.VConsole();
     function getToken() {
-      window.common.getToken((token) => {
+      window.Native.getToken((token) => {
         document.querySelector("#token").innerHTML = token;
       });
     }
     function toRecharge() {
-      window.common.toRecharge();
+      window.Native.toRecharge();
     }
     function toWithdraw() {
-      window.common.toWithdraw();
+      window.Native.toWithdraw();
     }
   </script>
 </html>
