@@ -120,10 +120,9 @@
   <script>
     new window.VConsole();
     function getToken() {
-      dsBridge.call("Native.getToken", (token) => {
-        document.querySelector("#token").innerHTML = token;
-        console.log(token);
-      });
+      const token = dsBridge.call("Native.getToken");
+      document.querySelector("#token").innerHTML = token;
+      console.log(token);
     }
     function toRecharge() {
       dsBridge.call("Native.toRecharge");
