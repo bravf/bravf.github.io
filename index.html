@@ -116,6 +116,23 @@
     <div>
       <button onclick="toLogin()">toLogin</button>
     </div>
+    <div>
+      <button onclick="toShare({title:'你好'})">toShare1</button>
+    </div>
+    <div>
+      <button
+        onclick="toShare({img:'https://pics4.baidu.com/feed/37d12f2eb9389b5033f1e6d612fbdbd1e6116e06.jpeg@f_auto?token=e33f314284b60792d339829c935f3f76'})"
+      >
+        toShare2
+      </button>
+    </div>
+    <div>
+      <button
+        onclick="toShare({title:'你好',img:'https://pics4.baidu.com/feed/37d12f2eb9389b5033f1e6d612fbdbd1e6116e06.jpeg@f_auto?token=e33f314284b60792d339829c935f3f76'})"
+      >
+        toShare3
+      </button>
+    </div>
   </body>
   <script>
     new window.VConsole();
@@ -132,6 +149,10 @@
     }
     function toLogin() {
       dsBridge.call("Native.toLogin");
+    }
+    function toShare(data) {
+      console.log(data);
+      dsBridge.call("Native.toShare", JSON.stringify(data));
     }
   </script>
 </html>
