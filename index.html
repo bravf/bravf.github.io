@@ -156,6 +156,9 @@
   </body>
   <script>
     new window.VConsole();
+
+    console.log(dsBridge.call("Native.getToken"));
+
     function startGame() {
       location.href = "https://qa-13.232.26.141.nip.io/dist/?app=1";
     }
