@@ -117,6 +117,9 @@
       <button onclick="startGame()">开始游戏</button>
     </div>
     <div>
+      <button onclick="startGame2()">开始游戏2</button>
+    </div>
+    <div>
       <button onclick="getToken()">getToken:</button>
       <span id="token"></span>
     </div>
@@ -161,6 +164,9 @@
 
     function startGame() {
       location.href = "https://qa-13.232.26.141.nip.io/dist/?app=1";
+    }
+    function startGame() {
+      location.href = "https://qa-13.232.26.141.nip.io/dist/?app=1#/login";
     }
     function getToken() {
       const token = dsBridge.call("Native.getToken");
